@@ -1,0 +1,249 @@
+
+risk is probability * impact
+
+what is a read me file.
+(A). A read me file is a quick and easy way for other people to learn about your work.
+
+what are the four parameters from fair???
+(A). ??? 
+How exploitable is this?					--- exploitability
+How prevalant are the weaknesses in this?			--- weakness prevalance	
+Are the weaknesses easily detectable?				--- weakness detectability
+What are the impacts if this gets breached?			--- technical impact
+
+#The Owasp score key is:		1		2		3
+#exploitability 			difficult	average		easy
+#weakness prevalence		uncommon	common		widespread
+#weakness detectability		diificult	average		easy
+#technical impact		minor		moderate	severe
+
+
+
+
+   ???
+
+
+What's the worst things I could do with each of the Owasp top 10?
+
+1. Injection -- sql
+#(A): A sql injection is an unauthorized query which an attacker can use to steal, modify or delete data. 
+#depending on the target the damage can range from privilege escalation due to modifying the database, to steal stuff like personally identifiable information, or just
+#deleting records and or tables.
+
+#Someone can steal the PII of people with security clearances and use it to compromise them.
+someone stole 77 million records from the philippine's election commission, which btw, is roughly the same number of people in the philippines!
+
+
+2. Broken Authentication
+
+(A): typically a site or application with poor authentication or session management.
+stuff like no minimum password requirements, ability of an adversary to do injection attacks.
+
+#a typical attack with broken authentication is credential surfing. an attacker can use someone else credentials to access a system, or can trying to access the credentials through a faulty recovering credential recovering program.
+
+#Someone can access valuable research data and steal it resulting in severe losses for the organization.
+
+the "17 media breach" where 30 million accounts were stolen because of poor password and session management.
+
+
+
+3. Sensitive Data Exposure
+#Typically it's data that transmitted and/or stored insecurely.
+
+# an attacker can steal the login credentials to a bank account if they were sent without encryption on an insecure network.
+e.g. loginning in to the bank's site from a coffee shop.
+
+
+
+
+4. XML External Entities (XXE)
+
+#XXE attacks occur when xml input has a external entity reference and is processed by a poorly configured xml parser.
+
+#The worst thing a XXE attack can do is that it can create a persistent entity and execute many types of attacks.
+
+Can be used to remotely execute code.
+
+
+
+5. Broken Access Control
+
+#The impact is that an attacker can gain administator level privileges and use those privileges for whatever the attack needs to do. e.g. create, updating, delete records,
+#accessing files and data.
+
+#impact depends on the protection needs of the application and data.
+
+Hacking the fbi's website and finding who's working on a case and getting the agents killed.
+
+
+
+6. Security Misconfiguration
+#A misconfiguration can happen at any level of an application stack.
+
+#Security misconfigurations can sometimes compromise the whole system and/or infrastructure.
+
+#a disabled firewall can result in compromised systems due to automated attacks.
+The us voters breach, 154 million profiles were stolen by a foreign actor. the misconfiguration was a couchdb database that required no authentication.
+
+
+
+7. Cross-Site Scripting (XSS)
+
+#XSS attacks can be used to steal credentials, sessions, or deliver malware.
+#The worst thing I can imagine happening is an attacker compromising intelligence agent's browser and stealing his session and reviewing the data from it.
+#Or it can be used to clean out some little old lady's bank account.
+
+
+
+
+8. Insecure Deserialization
+
+#deserialization is the transformation of a stored object back into usable code.
+
+#An attacker uses a poisoned object to execute remote code and introduce a worm into the infrastructure.
+
+
+
+
+
+9. Using components with known vulnerabilities.
+
+#all infrastructure is made of smaller piece and some of those pieces might have flaws in them.
+
+The Impact can vary, but some of the worst attacks in the recent past to have occured from vulnerabilities in code were attacks that stole millions of PII, login credentials, and financial data.
+Exploited vulnabilities also make up a large percentage of attacks.
+
+The worst case example of this type of attack? 
+The panama papers breach which had 2.6 terabytes worth of private financial data.
+
+
+10. insufficient logging & monitoring.
+
+if you can see unusual activity then you can deal with it.
+
+Attacks almost always have a reconnasince phase and if you can detect that then you might be able to mitigate the attack.
+
+worst case scenario? A equifax level breach, the adversary had months to steal data and that could've been mitigated if there was adequate monitoring involved.
+
+
+
+
+
+
+--------------------------------------------------------------------------
+
+
+Owasp measures vulnerability and risk in an organization's infrastructure by applying a score to the components in that infrastructure.
+Owasp measures the skill, motivations, resources, and accessability of an attacker against the likelihood of that adversary attacking that component or resource.
+
+
+
+
+
+
+#The First and most important consideration the tester will make will be the likelihood of an attack, just how often is the component going to be attacked? why would it be attacked?
+what does that component have access to? Who would be doing the attacks?
+
+#Owasp measures adversarial risk by measuring things like the skills of an adversary, motive, Opportunity, and how many potential attackers there are.
+
+#Owasp measures the vulnerability factors, like how easy is it for someone to find? how easy is it for someone to exploit? is it a well known vulnerability? how easy is it
+to detect an intrustion?
+
+Technical impact can be broken down into four main factors:
+Loss of confidentiality, how much data could disclosed and how sensitive is it? 
+Loss of integrity, how much data could be corrupted and how damaged is it?
+Loss of availability, How much service can be lost, for how long, and how vital is it?\
+Loss of accountability, how easy is it for the threat actors to be traced?
+
+
+And finally, Owasp measures business impact.
+How much financial damage will an organization suffer as the result of a breach?
+How will their reputation be affected as a result? how much lost business will result?
+how much damage will the fines from non-compliance bring?
+How much PII could be disclosed?
+
+
+-------------------------------------------------------------------------------------------------------------
+
+
+CVSS - common vulnerability scoring system
+
+consists of three metric groups: base, temporal, environmental.
+
+the base scores range from 0-10, like owasp.
+
+Nist doesn't currently provide temporal or environmental scores
+
+
+
+The base score metrics are:
+
+
+exploitability metrics:
+
+the attack vector is divided up into "local, adjacent network, and network."
+Access complexity; High, medium, low. Is it very difficult to exploit? then the attack probility for that will be low, is the vulnerability relatively easy to compromise?
+then it's going to be much easier to attack.
+authentication; How hard is it to authenticate? do you require multiple forms of authentication? or do you need only one? or none?
+
+#Impact:
+
+Confidentialilty, integrity, and availability.
+
+How much sensitive information could be released? If it's everything then it's pretty bad.
+
+How much can you trust your system? if you can't trust it at all then you have total loss of integrity.
+
+availability impact, if you can't do business then you've lost availability.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
