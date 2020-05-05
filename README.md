@@ -45,13 +45,13 @@ You should read about them and stay up to date on them because they make importa
 If you don't read about them, you stay in the darv on the most important and common vulnerabilities, and be more easily breached as a result, losing the respect of your customers, ownership, and other important stakeholders.
 
 
-* Injection - Inject unauthorized or foreign code into a piece of software to get it to do something it was not otherwise authorized to perform. 
+* Injection - ### > Inject unauthorized or foreign code into a piece of software to get it to do something it was not otherwise authorized to perform. 
 
-Example I have seen: 
+Metaphor: https://xkcd.com/327/
 
 * Broken Authentication - ###  > Injection flaws, such as SQL, NoSQL, OS, and LDAP injection, occur when untrusted data is sent to an interpreter as part of a command or query. The attacker’s hostile data can trick the interpreter into executing unintended commands or accessing data without proper authorization.
 
-Example I have seen: 
+Metaphor: being able to use your neighbor's key to access your house.
 
 * Sensitive Data Exposure - ### > Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other users’ identities temporarily or permanently.
 
@@ -85,7 +85,7 @@ Metaphor: Using a broken condom.
 
 * Insufficient logging and monitoring - ### >  Insufficient logging and monitoring, coupled with missing or ineffective integration with incident response, allows attackers to further attack systems, maintain persistence, pivot to more systems, and tamper, extract, or destroy data. Most breach studies show time to detect a breach is over 200 days, typically detected by external parties rather than internal processes or monitoring.
 
-Metaphor: The robbers cleaned the bank out in the middle of the night, but because there wasn't any cameras on premises no 
+Metaphor: The robbers cleaned the bank out in the middle of the night, but because there wasn't any cameras on premises no suspects could be ID'd.
 
 
 
