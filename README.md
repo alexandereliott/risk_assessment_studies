@@ -45,27 +45,27 @@ You should read about them and stay up to date on them because they make importa
 If you don't read about them, you stay in the darv on the most important and common vulnerabilities, and be more easily breached as a result, losing the respect of your customers, ownership, and other important stakeholders.
 
 
-* Injection - ### > Inject unauthorized or foreign code into a piece of software to get it to do something it was not otherwise authorized to perform. 
+* Injection - > Inject unauthorized or foreign code into a piece of software to get it to do something it was not otherwise authorized to perform. 
 
 Metaphor: https://xkcd.com/327/
 
-* Broken Authentication - ###  > Injection flaws, such as SQL, NoSQL, OS, and LDAP injection, occur when untrusted data is sent to an interpreter as part of a command or query. The attacker’s hostile data can trick the interpreter into executing unintended commands or accessing data without proper authorization.
+* Broken Authentication - > Injection flaws, such as SQL, NoSQL, OS, and LDAP injection, occur when untrusted data is sent to an interpreter as part of a command or query. The attacker’s hostile data can trick the interpreter into executing unintended commands or accessing data without proper authorization.
 
 Metaphor: being able to use your neighbor's key to access your house.
 
-* Sensitive Data Exposure - ### > Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other users’ identities temporarily or permanently.
+* Sensitive Data Exposure - > Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other users’ identities temporarily or permanently.
 
 Metaphor: Caught with your pants down!
 
-* XML External Entities (XXE) - ### > Many web applications and APIs do not properly protect sensitive data, such as financial, healthcare, and PII. Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data may be compromised without extra protection, such as encryption at rest or in transit, and requires special precautions when exchanged with the browser. 
+* XML External Entities (XXE) - > Many web applications and APIs do not properly protect sensitive data, such as financial, healthcare, and PII. Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data may be compromised without extra protection, such as encryption at rest or in transit, and requires special precautions when exchanged with the browser. 
 
 Metaphor: Foreigh saboteurs in the base!
 
-* Security Misconfiguration - ### > Security misconfiguration is the most commonly seen issue. This is commonly a result of insecure default configurations, incomplete or ad hoc configurations, open cloud storage, misconfigured HTTP headers, and verbose error messages containing sensitive information. Not only must all operating systems, frameworks, libraries, and applications be securely configured, but they must be patched/upgraded in a timely fashion.
+* Security Misconfiguration - > Security misconfiguration is the most commonly seen issue. This is commonly a result of insecure default configurations, incomplete or ad hoc configurations, open cloud storage, misconfigured HTTP headers, and verbose error messages containing sensitive information. Not only must all operating systems, frameworks, libraries, and applications be securely configured, but they must be patched/upgraded in a timely fashion.
 
 Metaphor: Electrician miswires the house (Could burn down or electrocute you)!
 
-* Cross Site Scripting (aka XSS) - ### > XSS flaws occur whenever an application includes untrusted data in a new web page without proper validation or escaping, or updates an existing web page with user-supplied data using a browser API that can create HTML or JavaScript. XSS allows attackers to execute scripts in the victim’s browser which can hijack user sessions, deface web sites, or redirect the user to malicious sites.
+* Cross Site Scripting (aka XSS) - > XSS flaws occur whenever an application includes untrusted data in a new web page without proper validation or escaping, or updates an existing web page with user-supplied data using a browser API that can create HTML or JavaScript. XSS allows attackers to execute scripts in the victim’s browser which can hijack user sessions, deface web sites, or redirect the user to malicious sites.
 
 Metaphor: Alex Jones as your neighbors! https://www.youtube.com/watch?v=XRSg6MS5xqA
 
