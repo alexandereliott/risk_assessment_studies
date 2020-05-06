@@ -6,6 +6,13 @@ This will determine the risk to Mass Driver Research, Inc.
 
 This will cover the 4 main risk assessment parameters of FAIR and the OWASP top ten definitions.
 
+Table of Contents
+=================
+
+   * [Risk Assessment](#risk-assessment)
+      * [4 Main Risk Assessment Parameters of FAIR](#4-main-risk-assessment-parameters-of-fair)
+         * [Other FAIR Definitions](#other-fair-definitions)
+      * [Definitions of the OWASP Top 10](#definitions-of-the-owasp-top-10)
 
 ## 4 Main Risk Assessment Parameters of FAIR
 
