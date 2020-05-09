@@ -39,11 +39,11 @@ Once you've compiled quantifiable information on the client's infrastructure.
 
 Definitions: 
 
-* Threat capability: Threat capability is the estimated capability of the threat agent or agents.
+* Threat capability: is the estimated capability of the threat agent or agents.
 
-* Contact frequency: Frequency of encountering the risk
+* Contact frequency: Frequency of encountering the risk.
 
-* Probability: Likelihood of the threat causing damage
+* Probability: Likelihood of the threat causing damage.
 
 * Resistance Strength: How difficult it is to exploit.
 
